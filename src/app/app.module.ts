@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSliderModule } from '@angular/material/slider';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   imports: [
@@ -16,6 +20,9 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
       { path: '', component: ProductListComponent },
       //{ path: 'products/:productId', component: ProductDetailsComponent },
     ]),
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatProgressBarModule,
   ],
   declarations: [
     AppComponent,
